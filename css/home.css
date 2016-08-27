@@ -1,0 +1,119 @@
+body #section-1 {
+  background-image: url(../images/white-bricks-bg.jpg);
+  background-size: cover;
+  min-height: 70vh; }
+  body #section-1 .inner-carousel {
+    min-height: 70vh;
+    vertical-align: center; }
+  body #section-1 img {
+    margin-top: 10vh;
+    height: 50vh;
+    width: 30vh;
+    display: inline; }
+  body #section-1 ol.carousel-indicators {
+    /* background-color: blue; */ }
+  body #section-1 .image2 {
+    float: right; }
+  body #section-1 h3 {
+    color: #000000;
+    font-weight: bold; }
+  body #section-1 h1 {
+    color: #E1414D;
+    font-weight: bold; }
+  body #section-1 h2 {
+    color: #FAA525;
+    font-weight: bold; }
+  body #section-1 h4 {
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #D7D7D5;
+    vertical-align: middle;
+    height: 50px; }
+body #section2 {
+  vertical-align: middle;
+  min-height: 20vh;
+  background-color: #F6F6F6; }
+  body #section2 .section2-block {
+    padding-top: 5vh; }
+  body #section2 i {
+    color: #D7D7D5;
+    background-color: #ffffff;
+    border-radius: 100%;
+    height: 7vh;
+    width: 7vh;
+    text-align: center;
+    vertical-align: middle; }
+  body #section2 header {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #FAA525; }
+  body #section2 p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9em;
+    padding-top: 2vh; }
+body #section3 {
+  min-height: 80vh; }
+  body #section3 h1 {
+    font-family: "Montserrat", sans-serif; }
+  body #section3 p {
+    font-family: "Open Sans", sans-serif; }
+body #section7 {
+  background-image: url(../images/grey-lines-background.jpg);
+  background-size: cover;
+  min-height: 35vh; }
+  body #section7 .inner-section7 {
+    margin-top: 10vh;
+    border: 1px solid #ffffff; }
+    body #section7 .inner-section7 p {
+      font-family: "Open Sans", sans-serif;
+      color: #ffffff;
+      text-align: center; }
+    body #section7 .inner-section7 h1 {
+      text-align: center;
+      font-weight: bold;
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff; }
+body #section8 {
+  background-image: url(../images/grey-seamless-bg.jpg);
+  background-size: cover;
+  width: 25%;
+  min-height: 85vh; }
+  body #section8 img {
+    left: 10vh;
+    margin-top: 10vh;
+    height: 65vh;
+    border: 10px solid #ffffff;
+    padding: 0px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175); }
+  body #section8 .author-info {
+    margin-top: 10vh; }
+    body #section8 .author-info h1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 2em; }
+    body #section8 .author-info p {
+      text-align: justify;
+      color: #D2D2D2;
+      font-family: "Open Sans", sans-serif; }
+    body #section8 .author-info header {
+      padding-top: 5vh;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold; }
+    body #section8 .author-info p.category {
+      color: #FAA525;
+      font-family: "Montserrat", sans-serif; }
+    body #section8 .author-info p.sign {
+      color: #94CACC;
+      font-family: 'Yellowtail', cursive;
+      font-size: 1.3em; }
+    body #section8 .author-info i {
+      background-color: #F4F4F4;
+      padding-top: 1vh;
+      height: 5vh;
+      width: 5vh;
+      color: #707172;
+      text-align: center;
+      vertical-align: middle;
+      margin-right: 5vh; }
+
+/*# sourceMappingURL=home.css.map */
