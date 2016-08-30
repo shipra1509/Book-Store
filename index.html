@@ -18,6 +18,7 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.rotateSlider.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/app.js"></script>
 
@@ -27,295 +28,331 @@
 	<!-- top-nav -->
 	<section id="top-nav">
 		<div class="container">
-			<i class="fa fa-paper-plane" aria-hidden="true"></i>
-			<i class="fa fa-globe" aria-hidden="true"></i>
-			<i class="fa fa-heart" aria-hidden="true"></i>
-			<a href=""><i class="fa fa-sign-in" aria-hidden="true"></i></a>
-			<div class="brand-icons">
+			<div class="partition col-md-3 col-xs-12 col-sm-12">
+				<i class="fa fa-paper-plane" aria-hidden="true"></i>
+			</div>
+
+			<div class="partition col-md-3 col-xs-12 col-sm-12">
+				<i class="fa fa-globe" aria-hidden="true"></i>
+				<i class="fa fa-heart" aria-hidden="true"></i>
+			</div>
+
+			<div class="partition col-md-3 col-xs-12 col-sm-12">
+				<a href=""><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+			</div>
+
+			<div class="brand-icons partition col-md-3 col-xs-12 col-sm-1">
 				<i class="fa fa-twitter" aria-hidden="true"></i>
 				<i class="fa fa-facebook" aria-hidden="true"></i>
 				<i class="fa fa-google-plus" aria-hidden="true"></i>
 				<i class="fa fa-tumblr" aria-hidden="true"></i>
 			</div>
-		</div>	
-	</section>
-	<!-- top-nav ends -->
-
-
-	<!-- Book Search -->
-	<section id="book-search">
-		<div class="container">
-			<img src="images/logo.jpg" alt="" class="col-md-2">
-
-			<div class="col-md-8">
-				<ul>
-					<li>How to order</li>
-					<li>Payment</li>
-					<li>Shipping</li>
-					<li>Return</li>
-					<li class="last-li">Call Us: +92 42 588 6785</li>
-				</ul>
-
-				<div class="row">    
-					<div class="col-xs-8 col-xs-offset-2">
-						<div class="input-group">
-							<div class="input-group-btn search-panel">
-								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-									<span id="search_concept">BOOK</span> <span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu" role="menu">
-									<li><a href="#">BOOK 1</a></li>
-									<li><a href="#">BOOK 2</a></li>
-									<li><a href="#">BOOK 3</a></li>
-								</ul>
-							</div>
-							<input type="hidden" name="search_param" value="all" id="search_param">         
-							<input type="text" class="form-control" name="x" placeholder="Search By Title, Author or Subject">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-							</span>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="col-md-2">
-				<i class="fa fa-truck" aria-hidden="true"></i>
-				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-
-			</div>
 		</div>
-	</section>
-	<!-- Book Search ends -->
-
-	<!-- Section 1 -->
-	<div id="section-1">
-		
+	</div>	
+</section>
+<!-- top-nav ends -->
 
 
-		<div id="carousel-example" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example" data-slide-to="1"></li>
-				<li data-target="#carousel-example" data-slide-to="2"></li>
-			</ol>
+<!-- Book Search -->
+<section id="book-search">
+	<div class="container">
+		<div class="col-md-2 col-sm-4 col-xs-4">
+			<img src="images/logo.jpg" alt="">
+		</div>
+		<div class="col-md-8">
+			<ul class="hidden-xs hidden-sm">
+				<li>How to order</li>
+				<li>Payment</li>
+				<li>Shipping</li>
+				<li>Return</li>
+				<li class="last-li">Call Us: +92 42 588 6785</li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<i class="fa fa-truck" aria-hidden="true"></i>
+			<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+		</div>
+	</div>
+</section>
+<!-- Book Search ends -->
 
-			<div class="carousel-inner">
 
-				<div class="item active container">
-					<div class="col-md-3 image-left">
-						<a href="#"><img src="images/slider4.jpg" /></a>
-					</div>
+<!-- NAVBAR -->
 
-					<div class="col-md-6 center-matter">
+<section id="black-navbar">
+	<div class="container">
+
+		<!-- Static navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Arts &amp; Photography</a></li>
+								<li><a href="#">Business &amp; Investing</a></li>
+								<li><a href="#">Biographies</a></li>
+								<li><a href="#">Children Books</a></li>
+								<li><a href="#">College Texts &amp; References</a></li>
+								<li><a href="#">Computer &amp; Internet</a></li>
+								<li><a href="#">Cooking, Food &amp; Wine</a></li>
+								<li><a href="#">Eductaional &amp; Professional</a></li>
+								<li><a href="#">Entertainment</a></li>
+								<li><a href="#">Entrance Exams</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">BLOG</a></li>
+						<li><a href="#">PAGES</a></li>
+						<li><a href="#">BOOK DETAIL</a></li>
+						<li><a href="#">AUTHOR</a></li>
+						<li><a href="#">404</a></li>
+						<li><a href="#">CONTACT US</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div><!--/.container-fluid -->
+		</nav>
+
+	</div> <!-- /container -->
+
+</section>
+
+<!-- Section 1 -->
+<div id="section-1">
+	<div id="carousel-example" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example" data-slide-to="1"></li>
+			<li data-target="#carousel-example" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="col-md-3 image-left hidden-sm hidden-xs">
+					<a href="#"><img src="images/carousel-book1.jpg" /></a>
+				</div>
+				<div class="col-md-6 col-xs-12 center-matter">
+					<div class="squarebrackets">
 						<h3>BEST SELLERS ON SALE</h3>
 						<h1>UPTO 50% OFF</h1>
 						<h2>+EXTRA 10% OFF</h2>
 						<h4>Use Coupon Code: BSB20010K16</h4>
-						<button type="button" class="btn btn-default">BUY NOW</button>
 					</div>
-					<div class="col-md-3 image-right">
-						<a href="#"><img src="images/slider5.jpg" /></a>
-					</div>
-
-
+					<button type="button" class="btn btn-default">BUY NOW</button>
 				</div>
-				<div class="item">
-					<a href="#"><img src="http://placekitten.com/1600/600" /></a>
-					<div class="carousel-caption">
-						<h3>Meow</h3>
-						<p>Just Kitten Around</p>
-					</div>
-				</div>
-				<div class="item">
-					<a href="#"><img src="http://placekitten.com/1600/600" /></a>
-					<div class="carousel-caption">
-						<h3>Meow</h3>
-						<p>Just Kitten Around</p>
-					</div>
+				<div class="col-md-3 image-right hidden-sm hidden-xs">
+					<a href="#"><img src="images/carousel-book2.png" /></a>
 				</div>
 			</div>
-
-			<a class="left carousel-control" href="#carousel-example" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-			<a class="right carousel-control" href="#carousel-example" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
+			<div class="item">
+				<div class="col-md-3 image-left hidden-sm hidden-xs">
+					<a href="#"><img src="images/slider5.jpg" /></a>
+				</div>
+				<div class="col-md-6 col-xs-12 center-matter">
+					<div class="squarebrackets">
+						<h3>BEST SELLERS ON SALE</h3>
+						<h1>UPTO 50% OFF</h1>
+						<h2>+EXTRA 10% OFF</h2>
+						<h4>Use Coupon Code: BSB20010K16</h4>
+					</div>
+					<button type="button" class="btn btn-default">BUY NOW</button>
+				</div>
+				<div class="col-md-3 image-right hidden-sm hidden-xs">
+					<a href="#"><img src="images/slider6.jpg" /></a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="col-md-3 image-left hidden-sm hidden-xs">
+					<a href="#"><img src="images/slider4.jpg" /></a>
+				</div>
+				<div class="col-md-6 col-xs-12 center-matter">
+					<div class="squarebrackets">
+						<h3>BEST SELLERS ON SALE</h3>
+						<h1>UPTO 50% OFF</h1>
+						<h2>+EXTRA 10% OFF</h2>
+						<h4>Use Coupon Code: BSB20010K16</h4>
+					</div>
+					<button type="button" class="btn btn-default">BUY NOW</button>
+				</div>
+				<div class="col-md-3 image-right hidden-sm hidden-xs">
+					<a href="#"><img src="images/slider3.jpeg" /></a>
+				</div>
+			</div>
 		</div>
-
-
-
-
-
+		<a class="left carousel-control" href="#carousel-example" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
 	</div>
+</div>
 
 
 
-	<div id="section2">
-		<div class="container section2-block">
-
-			<div class="col-md-1">
-				<i class="fa fa-truck fa-2x" aria-hidden="true"></i>
-			</div>
-			<div class="col-md-2">
-				<header>30-DAYY RETURN</header>
-				<p>Money back guarantee</p>
-			</div>
-
-			<div class="col-md-1">
-				<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-			</div>
-			<div class="col-md-2">
-				<header>FREE SHIPPING</header>
-				<p>On orders above $100</p>
-			</div>
-
-			<div class="col-md-1">
-				<i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
-			</div>
-			<div class="col-md-2">
-				<header>CUSTOMER CARE</header>
-				<p>Help and feedback</p>
-			</div>
-
-			<div class="col-md-1">
-				<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-			</div>
-			<div class="col-md-2">
-				<header>SAFE SHIPPING</header>
-				<p>Safe shopping guarantee</p>
-			</div>
-
+<div id="section2">
+	<div class="container section2-block">
+		<div class="col-md-1 col-xs-2">
+			<i class="fa fa-truck fa-2x" aria-hidden="true"></i>
+		</div>
+		<div class="col-md-2 col-xs-4">
+			<header>30-DAYY RETURN</header>
+			<p>Money back guarantee</p>
+		</div>
+		<div class="col-md-1 col-xs-2">
+			<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+		</div>
+		<div class="col-md-2 col-xs-4">
+			<header>FREE SHIPPING</header>
+			<p>On orders above $100</p>
+		</div>
+		<div class="col-md-1 col-xs-2">
+			<i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+		</div>
+		<div class="col-md-2 col-xs-4">
+			<header>CUSTOMER CARE</header>
+			<p>Help and feedback</p>
+		</div>
+		<div class="col-md-1 col-xs-2">
+			<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+		</div>
+		<div class="col-md-2 col-xs-4">
+			<header>SAFE SHIPPING</header>
+			<p>Safe shopping guarantee</p>
 		</div>
 	</div>
+</div>
 
 
-	<!-- featured books -->
-	<section id="featured-books">
-		<div class="container">
-			<h1>FEATURED BOOKS</h1>
-			<p>LOREM IPSUM DOLOR SIT AMET</p>		
-
-			<div class="row">
-				<div class="col-md-12">
-					<div class="carousel slide multi-item-carousel" id="theCarousel">
-						<div class="carousel-inner">
-							<div class="item active">
-								<div class="col-xs-4"><a href="#1"><img src="images/iceberg.jpg" class="img-responsive"></a>
-									<div class="description">
-										<h4>CATEGORY: HUMAN PSYCHIC</h4>
-										<h3>THE ICEBERG</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-										<hr>
-										<h4 class="cost">$99.00</h4>
-										<i class="fa fa-heart" aria-hidden="true"></i>
-										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-xs-4"><a href="#1"><img src="images/argo.jpg" class="img-responsive"></a>
-									<div class="description">
-										<h4>CATEGORY: FICTION</h4>
-										<h3>ARGO</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-										<hr>
-										<h4 class="cost">$99.00</h4>
-										<i class="fa fa-heart" aria-hidden="true"></i>
-										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-xs-4"><a href="#1"><img src="images/ask-for.jpg" class="img-responsive"></a>
-									<div class="description">
-										<h4>CATEGORY: FICTION</h4>
-										<h3>WHAT YOU WANT</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-										<hr>
-										<h4 class="cost">$99.00</h4>
-										<i class="fa fa-heart" aria-hidden="true"></i>
-										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-xs-4"><a href="#1"><img src="images/slider1.jpg" class="img-responsive"></a>
-									<div class="description">
-										<h4>CATEGORY: HUMAN PSYCHIC</h4>
-										<h3>SHERLOCK HOLMES</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-										<hr>
-										<h4 class="cost">$99.00</h4>
-										<i class="fa fa-heart" aria-hidden="true"></i>
-										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-xs-4"><a href="#1"><img src="images/slider2.jpg" class="img-responsive"></a>
-									<div class="description">
-										<h4>CATEGORY: HUMAN PSYCHIC</h4>
-										<h3>THE OLD MAN SEA</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-										<hr>
-										<h4 class="cost">$99.00</h4>
-										<i class="fa fa-heart" aria-hidden="true"></i>
-										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-									</div>
+<!-- featured books -->
+<section id="featured-books">
+	<div class="container">
+		<h1>FEATURED BOOKS</h1>
+		<p>LOREM IPSUM DOLOR SIT AMET</p>		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="carousel slide multi-item-carousel" id="theCarousel">
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="col-xs-4"><a href="#1"><img src="images/iceberg.jpg" class="img-responsive"></a>
+								<div class="description">
+									<h4>CATEGORY: HUMAN PSYCHIC</h4>
+									<h3>THE ICEBERG</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<hr>
+									<h4 class="cost">$99.00</h4>
+									<i class="fa fa-heart" aria-hidden="true"></i>
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 								</div>
 							</div>
 						</div>
-						<a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-						<a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+						<div class="item">
+							<div class="col-xs-4"><a href="#1"><img src="images/argo.jpg" class="img-responsive"></a>
+								<div class="description">
+									<h4>CATEGORY: FICTION</h4>
+									<h3>ARGO</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<hr>
+									<h4 class="cost">$99.00</h4>
+									<i class="fa fa-heart" aria-hidden="true"></i>
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-4"><a href="#1"><img src="images/ask-for.jpg" class="img-responsive"></a>
+								<div class="description">
+									<h4>CATEGORY: FICTION</h4>
+									<h3>WHAT YOU WANT</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<hr>
+									<h4 class="cost">$99.00</h4>
+									<i class="fa fa-heart" aria-hidden="true"></i>
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-4"><a href="#1"><img src="images/slider1.jpg" class="img-responsive"></a>
+								<div class="description">
+									<h4>CATEGORY: HUMAN PSYCHIC</h4>
+									<h3>SHERLOCK HOLMES</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<hr>
+									<h4 class="cost">$99.00</h4>
+									<i class="fa fa-heart" aria-hidden="true"></i>
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-4"><a href="#1"><img src="images/slider2.jpg" class="img-responsive"></a>
+								<div class="description">
+									<h4>CATEGORY: HUMAN PSYCHIC</h4>
+									<h3>THE OLD MAN SEA</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<hr>
+									<h4 class="cost">$99.00</h4>
+									<i class="fa fa-heart" aria-hidden="true"></i>
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
 					</div>
+					<a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+					<a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!-- Featured Books ends -->
+	</div>
+</section>
+<!-- Featured Books ends -->
 
-	<!-- Offers -->
-	<section id="offers">
-		<div class="container">
-
-			<div class="col-md-5" id="left-section">
-				<div class="col-md-offset-5 col-md-7 offer-tag">
-					<h3>CELEBRATE THE BOOK AUTHORS</h3>
-					<p>Born In March 2016</p>
-					<a href="#" class="shop-btn">SHOP NOW ></a>
-				</div>
-				<img src="images/slider1.jpg" alt="">
-
+<!-- Offers -->
+<section id="offers">
+	<div class="container">
+		<div class="col-md-5" id="left-section">
+			<div class="col-md-offset-5 col-md-7 offer-tag">
+				<h3>CELEBRATE THE BOOK AUTHORS</h3>
+				<p>Born In March 2016</p>
+				<a href="#" class="shop-btn">SHOP NOW ></a>
 			</div>
-
-			<div class="col-md-5 " id="right-section">
-				<div class="col-md-8 offer-tag">
-					<h3>UPTO 40% OFF</h3>
-					<p>On Advanced Entrance Exam Books</p>
-					<br>
-					<a href="#" class="shop-btn">SHOP NOW ></a>
-				</div>
-
-				<img src="images/slider2.jpg" alt="">
-			</div>
-
+			<img src="images/slider1.jpg" alt="">
 		</div>
+		<div class="col-md-5 " id="right-section">
+			<div class="col-md-8 offer-tag">
+				<h3>UPTO 40% OFF</h3>
+				<p>On Advanced Entrance Exam Books</p>
+				<br>
+				<a href="#" class="shop-btn">SHOP NOW ></a>
+			</div>
+			<img src="images/slider2.jpg" alt="">
+		</div>
+	</div>
+</section>
 
 
-	</section>
-
-	<!-- Rotate slider -->
-	<section id="round-carousel">
-
+<!-- 3D Carousel -->
+<section id="round-carousel">
+	<div class="container">
+		<h1>STAFF RECOMMENDED BOOKS</h1>
+		<h4>Lorem ipsum dolor sit amet</h4>
 		<div class="rotateslider-container" id="slider">
 
 			<!-- Insert your images here -->
 			<div class="rotateslider-item">
 				<img src="images/slider1.jpg">
-				<p></p>
 			</div>
 			<div class="rotateslider-item">
 				<img src="images/slider2.jpg">
@@ -335,57 +372,241 @@
 			<span class="arrow left js-rotateslider-arrow" data-action="prev"></span>
 
 		</div>
+	</div>
+</section>
 
 
-	</section>
+<!-- 	Tabs Carousel -->
 
-	<!-- SECTION 7 -->
-	<section id="section7">
-		<div class="container">
-			<div class="inner-section7">
-				<h1>FREE SHIPPING ON ALL ORDERS OVER $60</h1>
-				<p>Claritas Etiam Processus Lorem Ipsum Dolor Sit Amet</p>
+<section id="tab-carousel">
+
+	<div class="container">
+
+		<div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
+			<!-- Nav tabs -->
+			<div class="card">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#new-arrivals" aria-controls="new-arrivals" role="tab" data-toggle="tab">NEW ARRIVALS</a></li>
+					<li role="presentation"><a href="#bestsellers" aria-controls="bestsellers" role="tab" data-toggle="tab">BESTSELLERS</a></li>
+					<li role="presentation"><a href="#collections" aria-controls="collections" role="tab" data-toggle="tab">COLLECTIONS</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Tab panes -->
+		<div class="tab-content col-md-12">
+			<div role="tabpanel" class="tab-pane active" id="new-arrivals">
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="carousel slide multi-item-carousel" id="theTabCarousel">
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="col-xs-4"><a href="#1"><img src="images/forget-her-nots.jpg" class="img-responsive"></a>
+										<div class="tab-carousel-description">
+											<h5>WOMEN</h5>
+											<h4>FORGET HER NOTS</h4>
+											<p>$350.00  <span>$250.00</span> </p>
+											<button type="button" class="btn btn-default">ADD TO CART</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-4"><a href="#1"><img src="images/by-the-time.jpg" class="img-responsive"></a>
+										<div class="tab-carousel-description">
+											<h5>LOVE AND DATING</h5>
+											<h4>BY THE TIME YOU READ</h4>
+											<p>$58.00  <span>$100.00</span> </p>
+											<button type="button" class="btn btn-default">ADD TO CART</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-4"><a href="#1"><img src="images/in-real-life.jpg" class="img-responsive"></a>
+										<div class="tab-carousel-description">
+											<h5>INSPIRATIONAL</h5>
+											<h4>IN REAL LIFE</h4>
+											<p>$99.00  <span>$450.00</span> </p>
+											<button type="button" class="btn btn-default">ADD TO CART</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-4"><a href="#1"><img src="images/slider2.jpg" class="img-responsive"></a>
+										<div class="tab-carousel-description">
+											<h5>FICTION</h5>
+											<h4>THE OLDMAN</h4>
+											<p>$23.00  <span>$480.00</span> </p>
+											<button type="button" class="btn btn-default">ADD TO CART</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="left carousel-control" href="#theTabCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+							<a class="right carousel-control" href="#theTabCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane fade" id="bestsellers">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="carousel slide multi-item-carousel" id="theTabCarousel-1">
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="col-xs-4"><a href="#1"><img src="images/slider8.jpg" class="img-responsive"></a>
+										<div class="tab-carousel-description">
+											<h5>WOMEN</h5>
+											<h4>FORGET HER NOTS</h4>
+											<p>$350.00  <span>$250.00</span> </p>
+											<button type="button" class="btn btn-default">ADD TO CART</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-4"><a href="#1"><img src="images/slider7.jpg" class="img-responsive"></a>
+										<div class="tab-carousel-description">
+											<h5>LOVE AND DATING</h5>
+											<h4>BY THE TIME YOU READ</h4>
+											<p>$58.00  <span>$100.00</span> </p>
+											<button type="button" class="btn btn-default">ADD TO CART</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-4"><a href="#1"><img src="images/slider6.jpg" class="img-responsive"></a>
+										<div class="tab-carousel-description">
+											<h5>INSPIRATIONAL</h5>
+											<h4>IN REAL LIFE</h4>
+											<p>$99.00  <span>$450.00</span> </p>
+											<button type="button" class="btn btn-default">ADD TO CART</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-4"><a href="#1"><img src="images/slider2.jpg" class="img-responsive"></a>
+										<div class="tab-carousel-description">
+											<h5>FICTION</h5>
+											<h4>THE OLDMAN</h4>
+											<p>$23.00  <span>$480.00</span> </p>
+											<button type="button" class="btn btn-default">ADD TO CART</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="left carousel-control" href="#theTabCarousel-1" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+							<a class="right carousel-control" href="#theTabCarousel-1" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane fade" id="collections">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="carousel slide multi-item-carousel" id="theTabCarousel-2">
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="col-xs-4"><a href="#1"><img src="images/slider5.jpg" class="img-responsive"></a>
+										<div class="tab-carousel-description">
+											<h5>WOMEN</h5>
+											<h4>FORGET HER NOTS</h4>
+											<p>$350.00  <span>$250.00</span> </p>
+											<button type="button" class="btn btn-default">ADD TO CART</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-4"><a href="#1"><img src="images/slider4.jpg" class="img-responsive"></a>
+										<div class="tab-carousel-description">
+											<h5>LOVE AND DATING</h5>
+											<h4>BY THE TIME YOU READ</h4>
+											<p>$58.00  <span>$100.00</span> </p>
+											<button type="button" class="btn btn-default">ADD TO CART</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-4"><a href="#1"><img src="images/slider3.jpeg" class="img-responsive"></a>
+										<div class="tab-carousel-description">
+											<h5>INSPIRATIONAL</h5>
+											<h4>IN REAL LIFE</h4>
+											<p>$99.00  <span>$450.00</span> </p>
+											<button type="button" class="btn btn-default">ADD TO CART</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-4"><a href="#1"><img src="images/slider2.jpg" class="img-responsive"></a>
+										<div class="tab-carousel-description">
+											<h5>FICTION</h5>
+											<h4>THE OLDMAN</h4>
+											<p>$23.00  <span>$480.00</span> </p>
+											<button type="button" class="btn btn-default">ADD TO CART</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="left carousel-control" href="#theTabCarousel-2" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+							<a class="right carousel-control" href="#theTabCarousel-2" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 	Tabs Carousel ends -->
+
+<!-- SECTION 7 -->
+<section id="section7">
+	<div class="container">
+		<div class="inner-section7">
+			<h1>FREE SHIPPING ON ALL ORDERS OVER $60</h1>
+			<p>Claritas Etiam Processus Lorem Ipsum Dolor Sit Amet</p>
+		</div>
+	</div>
+</section>
+
+<!-- SECTION 8 -->
+<section id="section8">
+	<div class="container">
+		<img src="images/stephen.jpg" alt="Stephen John" class="col-md-3" class="hidden-xs hidden-sm">
+
+		<div class="col-md-5 col-md-offset-1 author-info">
+			<h1>FEATURED AUTHOR</h1>
+			<p>BEST OF STEPHEN JOHNS</p>
+			<header>STEPHEN JOHNS</header>
+			<p class="category">BOOK WRITER - FICTION</p>
+			<p>Vestibulum varius fermentum risus vitae lacinia neque auctor nec. Nunc ac rutrum nulla. Nulla maximus dolor in quam euismod ac viverra libero aliquet. Vestibulum varius fermentum risus.
+				<p>Vitae lacinia neque auctor nec. Nunc ac rutrum nulla. Nulla maximus dolor in quam euismod ac viverra libero aliquet.</p>
+
+				<p class="sign">Stephen Johns</p>
+				<hr>
+
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				<i class="fa fa-google-plus" aria-hidden="true"></i>
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+				<i class="fa fa-linkedin" aria-hidden="true"></i>
+				<i class="fa fa-tumblr" aria-hidden="true"></i>
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</div>
+
+			<div class="col-md-3">
 			</div>
 		</div>
 	</section>
 
-	<!-- SECTION 8 -->
-	<section id="section8">
+
+	<!-- FEATURED BLOGPOSTS -->
+	<section id="blogposts">
 		<div class="container">
-			<img src="images/stephen.jpg" alt="Stephen John" class="col-md-3">
+			<h1>FEATURED BLOG POSTS</h1>
+			<p>LOREM IPSUM DOLOR SIT AMET</p>
 
-			<div class="col-md-5 col-md-offset-1 author-info">
-				<h1>FEATURED AUTHOR</h1>
-				<p>BEST OF STEPHEN JOHNS</p>
-				<header>STEPHEN JOHNS</header>
-				<p class="category">BOOK WRITER - FICTION</p>
-				<p>Vestibulum varius fermentum risus vitae lacinia neque auctor nec. Nunc ac rutrum nulla. Nulla maximus dolor in quam euismod ac viverra libero aliquet. Vestibulum varius fermentum risus.
-					<p>Vitae lacinia neque auctor nec. Nunc ac rutrum nulla. Nulla maximus dolor in quam euismod ac viverra libero aliquet.</p>
-
-					<p class="sign">Stephen Johns</p>
-					<hr>
-
-					<i class="fa fa-twitter" aria-hidden="true"></i>
-					<i class="fa fa-google-plus" aria-hidden="true"></i>
-					<i class="fa fa-facebook" aria-hidden="true"></i>
-					<i class="fa fa-linkedin" aria-hidden="true"></i>
-					<i class="fa fa-tumblr" aria-hidden="true"></i>
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-				</div>
-
-				<div class="col-md-3">
-				</div>
-			</div>
-		</section>
-
-		<section id="section9">
-			<div class="container">
-				<h1>FEATURED BLOG POSTS</h1>
-				<p>LOREM IPSUM DOLOR SIT AMET</p>
-
-				<div class="col-md-4">
-					<div class="border1">
-						<img src="images/pulse.jpg" alt="">
+			<div class="col-md-4">
+				<div class="border1">
+					<img src="images/pulse.jpg" alt="">
 				<!-- 	<div class="tag">
 					<header>26</header>
 					<p>FEB</p>
@@ -454,10 +675,12 @@
 		</div>
 	</div>
 </section>
+<!-- FEATURED BLOGPOSTS ENDS -->
 
-<section id="section10">
+<!-- Featured Publishers -->
+<section id="publishers">
 	<div class="container">
-		<div class="col-md-8 col-sm-12">
+		<div class="col-md-8 col-sm-12 col-xs-12 left-part">
 			<h1>FEATURED PUBLISHERS</h1>
 			<p>Lorem ipsum dolor sit amet</p>
 			<div class="upper-block">
@@ -474,7 +697,7 @@
 
 		</div>
 
-		<div class="col-md-4 col-sm-12 author-carousel">
+		<div class="col-md-4 col-sm-12 col-xs-12 author-carousel">
 
 			<div id="authorCarousel" class="carousel slide" data-interval="1000" data-ride="carousel">
 				<!-- Indicators -->
@@ -487,38 +710,32 @@
 
 				<!-- carousel Items -->
 				<div class="carousel-inner">
-
 					<div class="item active">
 						<i class="fa fa-quote-left" aria-hidden="true"></i>
 						<img src="images/man.jpg" alt="...">
 						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sequi, tenetur.</h3>
 						<p>James Stewart, <span>Company Name</span></p>
 					</div>
-
-
 					<div class="item">
 						<i class="fa fa-quote-left" aria-hidden="true"></i>
 						<img src="images/man.jpg" alt="...">
 						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sequi, tenetur.</h3>
 						<p>James Stewart, <span>Company Name</span></p>
 					</div>
-
 					<div class="item">
 						<i class="fa fa-quote-left" aria-hidden="true"></i>
 						<img src="images/man.jpg" alt="...">
 						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sequi, tenetur.</h3>
 						<p>James Stewart, <span>Company Name</span></p>
 					</div>
-
 				</div>
-
 			</div> <!-- Carousel -->
-
 		</div>
 	</div>
 </section>
+<!-- Featured Publishers ends -->
 
-
+<!-- Foooter -->
 <footer>
 	<div class="container">
 		<section class="col-md-4">
@@ -554,11 +771,9 @@
 			<div class="col-md-8"><p>45, 3rd Floor, Loft Towers, Media City</p></div>
 			<div class="col-md-4"><p>Phone:</p></div>
 			<div class="col-md-8"><p>+971234876 - Office<br>+9715674366 - Fax</p></div>
-
 		</section>
 	</div>
 </footer>
-
 
 </body>
 </html>
