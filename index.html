@@ -56,22 +56,49 @@
 <!-- Book Search -->
 <section id="book-search">
 	<div class="container">
-		<div class="col-md-2 col-sm-4 col-xs-4">
+
+		<div class="col-md-2 col-sm-3 col-xs-3">
 			<img src="images/logo.jpg" alt="">
 		</div>
-		<div class="col-md-8">
-			<ul class="hidden-xs hidden-sm">
+
+		<div class="col-md-8 col-sm-6 col-xs-6">
+			<ul class="upper-line hidden-xs hidden-sm">
 				<li>How to order</li>
 				<li>Payment</li>
 				<li>Shipping</li>
 				<li>Return</li>
 				<li class="last-li">Call Us: +92 42 588 6785</li>
 			</ul>
+
+			<div class="row">    
+				<div class="input-group">
+					<div class="input-group-btn search-panel">
+						<button type="button" class="btn btn-default dropdown-toggle hidden-sm hidden-xs" data-toggle="dropdown">
+							<span id="search_concept">BOOK</span> <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#fiction">FICTION</a></li>
+							<li><a href="#horror">HORROR</a></li>
+							<li><a href="#comics">COMICS</a></li>
+							<li><a href="#biography">BIOGRAPHY</a></li>
+							<li class="divider"></li>
+							<li><a href="#all">OTHERS</a></li>
+						</ul>
+					</div>
+					<input type="hidden" name="search_param" value="all" id="search_param">         
+					<input type="text" class="form-control" name="x" placeholder="Search by Title, Author, Subject or ISBN here... ">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+					</span>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-2">
+
+		<div class="col-md-2 col-sm-3 col-xs-3">
 			<i class="fa fa-truck" aria-hidden="true"></i>
 			<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 		</div>
+
 	</div>
 </section>
 <!-- Book Search ends -->
@@ -322,26 +349,28 @@
 <!-- Offers -->
 <section id="offers">
 	<div class="container">
-		<div class="col-md-5" id="left-section">
+
+		<div class="col-md-5 col-sm-12 col-xs-12" id="left-section">
 			<div class="col-md-offset-5 col-md-7 offer-tag">
 				<h3>CELEBRATE THE BOOK AUTHORS</h3>
 				<p>Born In March 2016</p>
 				<a href="#" class="shop-btn">SHOP NOW ></a>
 			</div>
-			<img src="images/slider1.jpg" alt="">
+			<img src="images/slider1.jpg" alt="" class="hidden-xs hidden-sm">
 		</div>
-		<div class="col-md-5 " id="right-section">
+
+		<div class="col-md-5 col-md-offset-2 col-sm-12 col-xs-12" id="right-section">
 			<div class="col-md-8 offer-tag">
 				<h3>UPTO 40% OFF</h3>
 				<p>On Advanced Entrance Exam Books</p>
 				<br>
 				<a href="#" class="shop-btn">SHOP NOW ></a>
 			</div>
-			<img src="images/slider2.jpg" alt="">
+			<img src="images/slider2.jpg" alt="" class="hidden-xs hidden-sm">
 		</div>
 	</div>
 </section>
-
+<!-- Offers ends -->
 
 <!-- 3D Carousel -->
 <section id="round-carousel">
@@ -382,7 +411,7 @@
 
 	<div class="container">
 
-		<div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
+		<div class="col-md-4 col-md-offset-4 col-xs-12">
 			<!-- Nav tabs -->
 			<div class="card">
 				<ul class="nav nav-tabs" role="tablist">
@@ -568,12 +597,12 @@
 	</div>
 </section>
 
-<!-- SECTION 8 -->
-<section id="section8">
+<!-- FEATURED AUTHOR -->
+<section id="featured-author">
 	<div class="container">
-		<img src="images/stephen.jpg" alt="Stephen John" class="col-md-3" class="hidden-xs hidden-sm">
+		<img src="images/stephen.jpg" alt="Stephen John" class="col-md-3 col-sm-12 col-xs-12">
 
-		<div class="col-md-5 col-md-offset-1 author-info">
+		<div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12 author-info">
 			<h1>FEATURED AUTHOR</h1>
 			<p>BEST OF STEPHEN JOHNS</p>
 			<header>STEPHEN JOHNS</header>
@@ -681,18 +710,22 @@
 <section id="publishers">
 	<div class="container">
 		<div class="col-md-8 col-sm-12 col-xs-12 left-part">
+
 			<h1>FEATURED PUBLISHERS</h1>
 			<p>Lorem ipsum dolor sit amet</p>
-			<div class="upper-block">
-				<img src="images/1.jpg" alt="">
-				<img src="images/2.jpg" alt="" class="middle">
-				<img src="images/2.jpg" alt="">
-			</div>
 
-			<div class="lower-block">
-				<img src="images/2.jpg" alt="">
-				<img src="images/1.jpg" alt="" class="middle">
-				<img src="images/3.jpg" alt="">
+			<div class="hidden-sm hidden-xs">
+				<div class="upper-block">
+					<img src="images/1.jpg" alt="">
+					<img src="images/2.jpg" alt="" class="middle">
+					<img src="images/2.jpg" alt="">
+				</div>
+
+				<div class="lower-block">
+					<img src="images/2.jpg" alt="">
+					<img src="images/1.jpg" alt="" class="middle">
+					<img src="images/3.jpg" alt="">
+				</div>
 			</div>
 
 		</div>

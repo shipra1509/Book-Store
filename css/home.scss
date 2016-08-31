@@ -15,7 +15,7 @@ body{
 
 /* top-nav starts */
 #top-nav{
-	min-height: 8vh;
+	min-height: 5vh;
 	background-color: #F6F6F6;
 
 	.partition{
@@ -66,7 +66,6 @@ body{
 			width: 4vh;
 			font-size: 2vh;
 			text-align: center;
-			vertical-align: middle;
 			margin-left: 2vh;
 			background-color: #777777;
 			color:#F6F6F6;
@@ -78,14 +77,16 @@ body{
 
 /* Book search starts */
 #book-search{
-	min-height: 30vh;
+	min-height: 10vh;
 	img{
 		margin-top: 5vh;
 		height: 17vmin;
 		width: 23vmin;
 	}
-	ul{
+	ul.upper-line{
 		margin-top: 5vh;
+		padding: 0;
+		text-align: left;
 		li{
 			list-style: none;
 			display: inline;
@@ -93,32 +94,51 @@ body{
 			font-family: $secondary-font;
 			padding: 0 2vmin 0 2vmin;
 			color: #777777;
-			font-size: 10px;
+			font-size: 13px;
 		}
 		li:last-child{
 			border-right: none;
 		}
 	}
-	span#search-concept{
-		background-color: #F6F6F6;
-	}
-	.btn:focus {
-		outline: none;
-	}
+
 	.input-group{
-		border: 2px solid #FAA525;
-		margin-left: 5vh;
+		width: 40vw;
+margin-top: 5vh;
+margin-left: 4vh;
+		* {
+			-webkit-border-radius: 0 !important;
+			-moz-border-radius: 0 !important;
+			border-radius: 0 !important;
+		}
 	}
+
+	.dropdown-menu > li{
+font-family: $secondary-font;
+font-size: 13px;
+	}
+
+input:focus {
+						border: none;
+					}
+
+span > button{
+	background-color: $color_orange_approx;
+	color: #fff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
 	i{
-		position: relative;
-		margin-top: 15vh;
-		padding-left: 4vh;
-		font-size: 3em;
+		padding-left: 1vh;
+		margin-top: 5vh;
+		font-size: 5vmin;
 		color: #CCCCCC;
 	}
 }
+/* Book search ends */
 
-
+/* black-navbar */
 #black-navbar{
 	.navbar-default{
 		margin-bottom: 0;
@@ -129,27 +149,27 @@ body{
 		font-family: $secondary-font;
 	}
 
-.dropdown-menu > a{
-	color: #CCCCCC;
-} 
+	.dropdown-menu > a{
+		color: #CCCCCC;
+	} 
 
-a.dropdown-toggle{
-			color: #fff;
+	a.dropdown-toggle{
+		color: #fff;
 
-	&.hover{
-		text-decoration: none;
+		&.hover{
+			text-decoration: none;
+		}
+
+		&.active{
+			background-color: #000;
+		}
 	}
-
-	&.active{
-		background-color: #000;
-	}
-}
 	.navbar-right > li > a{
 		color: #fff;
 
-	&.hover{
-		text-decoration: none;
-	}
+		&.hover{
+			text-decoration: none;
+		}
 	}
 
 }
@@ -370,7 +390,10 @@ a.dropdown-toggle{
 /* Offers */
 
 #offers{
-	min-height: 30vh;
+	min-height: 40vh;
+	a{
+		text-decoration: none;
+	}
 	#left-section{	
 		position: relative;
 		border: 10px solid #777777; 
@@ -382,7 +405,6 @@ a.dropdown-toggle{
 		}
 		a{
 			text-align: right;
-			text-decoration: none;
 		}
 		img{
 			top: -178px;
@@ -604,7 +626,7 @@ a.dropdown-toggle{
 
 	.tab-carousel-description{
 		background-color: #F6F6F6;
-		width: 40vmin;
+		width: 250px;
 		margin-right: auto;
 		margin-left: auto;
 		padding: 2vmin;
@@ -612,8 +634,8 @@ a.dropdown-toggle{
 	}
 
 	img{
-		height: 50vmin;
-		width: 40vmin;
+		height: 350px;
+		width: 250px;
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -679,17 +701,17 @@ a.dropdown-toggle{
         transition: 500ms ease-in-out all;
         -webkit-backface-visibility: hidden;
         transform: none!important;
-       }
       }
-     }
-     .carouse-control{
-     	&.left, &.right{
-     		background-image: none;
-     	}
-     }
     }
+  }
+  .carouse-control{
+  	&.left, &.right{
+  		background-image: none;
+  	}
+  }
+}
 
-   }
+}
 
 
 /* section7 */
@@ -701,6 +723,7 @@ a.dropdown-toggle{
 
 	.inner-section7{
 		margin-top: 10vh;
+		margin-bottom: 10vh;
 		border: 1px solid #ffffff;
 
 		p{
@@ -719,15 +742,10 @@ a.dropdown-toggle{
 	}
 }
 
-/* section8 */
-#section8{
-	background-image: url(../images/grey-seamless-bg.jpg);
-	background-size: cover;
-	width: 25%;
+/* FEATURED AUTHOR */
+#featured-author{
 	min-height : 85vh;
-
 	img{
-		left: 10vh;
 		margin-top: 10vh;
 		height: 65vh;
 		border: 10px solid #ffffff;
@@ -769,19 +787,21 @@ a.dropdown-toggle{
 		}
 
 		i{
-			background-color: #F4F4F4;
-			padding-top: 1vh;
-			height: 5vh;
-			width: 5vh;
-			color: #707172;
+			padding: 1vh;
+			width: 4vh;
+			font-size: 2vh;
 			text-align: center;
-			vertical-align: middle;
-			margin-right: 5vh;
+			margin-left: 2vh;
+			margin-bottom: 2vh;
+			background-color: #F6F6F6;
+			color:#777777;
+			border-radius: 10%;
 		}
 	}
 
 }
 
+/* BLOGPOSTS */
 #blogposts{
 	min-height : 100vh;
 	h1{
@@ -912,7 +932,6 @@ i.fa-long-arrow-right{
 
 	.upper-block{
 		border-bottom: 2px solid #F4F4F4;
-
 		text-align: center;
 	}
 

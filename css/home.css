@@ -2,6 +2,8 @@ body {
   /* top-nav starts */
   /* top-nav ends */
   /* Book search starts */
+  /* Book search ends */
+  /* black-navbar */
   /* section 1 starts */
   /* section2 */
   /* featured-books */
@@ -9,11 +11,12 @@ body {
   /* 3D Carousel */
   /* 	Tab Carousel */
   /* section7 */
-  /* section8 */
+  /* FEATURED AUTHOR */
+  /* BLOGPOSTS */
   /* PUBLISHERS */
   /* footer starts */ }
   body #top-nav {
-    min-height: 8vh;
+    min-height: 5vh;
     background-color: #F6F6F6; }
     body #top-nav .partition {
       text-align: center;
@@ -55,41 +58,53 @@ body {
         width: 4vh;
         font-size: 2vh;
         text-align: center;
-        vertical-align: middle;
         margin-left: 2vh;
         background-color: #777777;
         color: #F6F6F6;
         border-radius: 10%; }
   body #book-search {
-    min-height: 30vh; }
+    min-height: 10vh; }
     body #book-search img {
       margin-top: 5vh;
       height: 17vmin;
       width: 23vmin; }
-    body #book-search ul {
-      margin-top: 5vh; }
-      body #book-search ul li {
+    body #book-search ul.upper-line {
+      margin-top: 5vh;
+      padding: 0;
+      text-align: left; }
+      body #book-search ul.upper-line li {
         list-style: none;
         display: inline;
         border-right: 2px solid #F4F4F4;
         font-family: "Open Sans", sans-serif;
         padding: 0 2vmin 0 2vmin;
         color: #777777;
-        font-size: 10px; }
-      body #book-search ul li:last-child {
+        font-size: 13px; }
+      body #book-search ul.upper-line li:last-child {
         border-right: none; }
-    body #book-search span#search-concept {
-      background-color: #F6F6F6; }
-    body #book-search .btn:focus {
-      outline: none; }
     body #book-search .input-group {
-      border: 2px solid #FAA525;
-      margin-left: 5vh; }
+      width: 40vw;
+      margin-top: 5vh;
+      margin-left: 4vh; }
+      body #book-search .input-group * {
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important; }
+    body #book-search .dropdown-menu > li {
+      font-family: "Open Sans", sans-serif;
+      font-size: 13px; }
+    body #book-search input:focus {
+      border: none; }
+    body #book-search span > button {
+      background-color: #FAA525;
+      color: #fff;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
     body #book-search i {
-      position: relative;
-      margin-top: 15vh;
-      padding-left: 4vh;
-      font-size: 3em;
+      padding-left: 1vh;
+      margin-top: 5vh;
+      font-size: 5vmin;
       color: #CCCCCC; }
   body #black-navbar .navbar-default {
     margin-bottom: 0;
@@ -260,7 +275,9 @@ body {
     body #featured-books .multi-item-carousel .carousel-control.left {
       background-image: none !important; }
   body #offers {
-    min-height: 30vh; }
+    min-height: 40vh; }
+    body #offers a {
+      text-decoration: none; }
     body #offers #left-section {
       position: relative;
       border: 10px solid #777777;
@@ -270,8 +287,7 @@ body {
       body #offers #left-section .offer-tag {
         float: right; }
       body #offers #left-section a {
-        text-align: right;
-        text-decoration: none; }
+        text-align: right; }
       body #offers #left-section img {
         top: -178px; }
     body #offers h3, body #offers p, body #offers a {
@@ -427,14 +443,14 @@ body {
       color: #fff; }
     body #tab-carousel .tab-carousel-description {
       background-color: #F6F6F6;
-      width: 40vmin;
+      width: 250px;
       margin-right: auto;
       margin-left: auto;
       padding: 2vmin;
       text-align: center; }
     body #tab-carousel img {
-      height: 50vmin;
-      width: 40vmin;
+      height: 350px;
+      width: 250px;
       margin-right: auto;
       margin-left: auto; }
     body #tab-carousel p > span {
@@ -480,6 +496,7 @@ body {
     min-height: 35vh; }
     body #section7 .inner-section7 {
       margin-top: 10vh;
+      margin-bottom: 10vh;
       border: 1px solid #ffffff; }
       body #section7 .inner-section7 p {
         font-family: "Open Sans", sans-serif;
@@ -490,48 +507,45 @@ body {
         font-weight: bold;
         font-family: "Montserrat", sans-serif;
         color: #ffffff; }
-  body #section8 {
-    background-image: url(../images/grey-seamless-bg.jpg);
-    background-size: cover;
-    width: 25%;
+  body #featured-author {
     min-height: 85vh; }
-    body #section8 img {
-      left: 10vh;
+    body #featured-author img {
       margin-top: 10vh;
       height: 65vh;
       border: 10px solid #ffffff;
       padding: 0px;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175); }
-    body #section8 .author-info {
+    body #featured-author .author-info {
       margin-top: 10vh; }
-      body #section8 .author-info h1 {
+      body #featured-author .author-info h1 {
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
         font-size: 2em; }
-      body #section8 .author-info p {
+      body #featured-author .author-info p {
         text-align: justify;
         color: #C0C0C0;
         font-family: "Open Sans", sans-serif; }
-      body #section8 .author-info header {
+      body #featured-author .author-info header {
         padding-top: 5vh;
         font-family: "Open Sans", sans-serif;
         font-weight: bold; }
-      body #section8 .author-info p.category {
+      body #featured-author .author-info p.category {
         color: #FAA525;
         font-family: "Montserrat", sans-serif; }
-      body #section8 .author-info p.sign {
+      body #featured-author .author-info p.sign {
         color: #94CACC;
         font-family: 'Yellowtail', cursive;
         font-size: 1.5em; }
-      body #section8 .author-info i {
-        background-color: #F4F4F4;
-        padding-top: 1vh;
-        height: 5vh;
-        width: 5vh;
-        color: #707172;
+      body #featured-author .author-info i {
+        padding: 1vh;
+        width: 4vh;
+        font-size: 2vh;
         text-align: center;
-        vertical-align: middle;
-        margin-right: 5vh; }
+        margin-left: 2vh;
+        margin-bottom: 2vh;
+        background-color: #F6F6F6;
+        color: #777777;
+        border-radius: 10%; }
   body #blogposts {
     min-height: 100vh; }
     body #blogposts h1 {
