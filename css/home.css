@@ -6,7 +6,7 @@ body {
   /* black-navbar */
   /* section 1 starts */
   /* section2 */
-  /* featured-books */
+  /* FEATURED BOOKS */
   /* Offers */
   /* 3D Carousel */
   /* 	Tab Carousel */
@@ -249,23 +249,26 @@ body {
       margin-right: 0; }
     body #featured-books .multi-item-carousel .carousel-inner .description {
       background-color: #F6F6F6;
-      padding: 2vh; }
+      padding: 1vh; }
       body #featured-books .multi-item-carousel .carousel-inner .description h4, body #featured-books .multi-item-carousel .carousel-inner .description h3, body #featured-books .multi-item-carousel .carousel-inner .description p {
         font-family: "Open Sans", sans-serif; }
       body #featured-books .multi-item-carousel .carousel-inner .description h4 {
+        font-size: 2vh;
         color: #C0C0C0;
         margin-top: 0; }
       body #featured-books .multi-item-carousel .carousel-inner .description h3 {
+        font-size: 3vh;
         color: #777777;
         font-weight: bold; }
       body #featured-books .multi-item-carousel .carousel-inner .description h4.cost {
+        font-size: 2vh;
         display: inline;
         color: #FAA525;
         font-weight: bold; }
       body #featured-books .multi-item-carousel .carousel-inner .description i {
-        font-size: 1em;
+        font-size: 2vh;
         float: right;
-        padding-right: 2vh;
+        padding-right: 1vh;
         display: inline;
         color: #777777; }
     body #featured-books .multi-item-carousel .carouse-control.left, body #featured-books .multi-item-carousel .carouse-control.right {
@@ -509,12 +512,16 @@ body {
         color: #ffffff; }
   body #featured-author {
     min-height: 85vh; }
-    body #featured-author img {
-      margin-top: 10vh;
-      height: 65vh;
-      border: 10px solid #ffffff;
-      padding: 0px;
-      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175); }
+    body #featured-author .author-image {
+      text-align: center; }
+      body #featured-author .author-image img {
+        margin-top: 10vh;
+        height: 400px;
+        width: 280px;
+        text-align: center;
+        border: 10px solid #ffffff;
+        padding: 0px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175); }
     body #featured-author .author-info {
       margin-top: 10vh; }
       body #featured-author .author-info h1 {
